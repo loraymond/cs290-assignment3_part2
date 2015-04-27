@@ -1,0 +1,21 @@
+#wrapper {
+	width: 100%;
+}
+
+#resultsDiv {
+	width: 45%;
+	float: left;
+	margin-right: 60px;
+}
+
+#favoritesDiv { 
+	width: 50%;
+	float: left;
+}
+
+.gist {
+	width:100%;
+	margin: 5px 0;
+	padding: 5px;
+	border: 1px solid #000;
+}

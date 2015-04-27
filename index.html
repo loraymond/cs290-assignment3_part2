@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="assign3.js"></script>
+		<link rel="stylesheet" type="text/css" href="assign3.css" >
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="options">
+			<fieldset>
+				<legend>GIST retrieval options</legend>
+				<label for="pages"># of pages of Gists to display</label>
+				<select name="pages" id="pages">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+				<br>
+				<p>Languages to display (select none for all)
+				<label><input type="checkbox" name="lang" value="Python" />Python</label>
+				<label><input type="checkbox" name="lang" value="JSON" />JSON</label>
+				<label><input type="checkbox" name="lang" value="JavaScript" />JavaScript</label>
+				<label><input type="checkbox" name="lang" value="SQL" />SQL</label>
+				</p>
+				<input type="button" value="Search" onClick="getGists()" >
+			</fieldset>
+	</div>
+	<div id="resultsDiv">
+		<h3>Search Results</h3>
+		<p id="results"></p>
+	</div>
+	<div id="favoritesDiv">
+		<h3>Favorites</h3>
+		<p id="favorites"></p>
+	</div>
+	</div>
+	</body>
+</html>
